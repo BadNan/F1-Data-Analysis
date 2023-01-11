@@ -1,5 +1,7 @@
 # Are F1 cars getting slower?
 
+![F1 image](/Blog/F1image.jpeg?raw=true "F1 cars over the years")
+
 Using Kaggle's F1 Data set, I try to answer this question but I do so by diving into 3 important sub questions that need attention first.
 
 ## Introduction
@@ -15,6 +17,8 @@ Lets proceed in steps and answer the following questions first.
 
 Below you can see the fastest lap times in milliseconds for each track as well as the year the fastest lap was achieved. 
 
+![q1](/Blog/Resultsq1.png?raw=true "results for q1")
+
 After summing the occurrences of each year, the year 1996 achieved the highest fastest lap times at 16 tracks. This is significantly higher than second place which was 1997 at 2 tracks. It is also worth noting that 1996 is the earliest year available in the dataset and it achieved the most fastest laps, so does that mean the current years are slower?
 
 To answer that lets dive deeper into each track.
@@ -22,6 +26,8 @@ To answer that lets dive deeper into each track.
 ## Which track has the biggest improvement in lap time?
 
 Below you can see a table grouped by name but the only column we will be focusing on is 'milliseconds_diff' because this column represents the difference between the slowest and fastest times for each circuit.
+
+![q2](/Blog/Resultsq2.png?raw=true "results for q2")
 
 The table has been sorted in descending order so it can be seen that the Canadian Grand Prix has the largest difference, almost double that of second place, the British Grand Prix! 
 
@@ -31,6 +37,8 @@ However, there could be outliers and anomalies in the data which affect change i
 ## How do lap time vary throughout the years?
 
 These plots show how the lap times vary throughout the years for each track. In general, lap times have stayed consistent through out the years although tracks such as the European Grand Prix saw its lap time getting slower over the years whilst the German Grand Prix saw a sharp decrease in lap times from the year ~2000 onwards.
+
+![q3](/Blog/Resultsq3.png?raw=true "results for q3")
 
 It is also important to note that for those tracks that have been raced on for many years there are some years that recorded anomalous results such as Brazilian, British, Canadian, Japanese and Malaysian Grand Prix's. These outliers are also all significantly slower than the normal trend and explain why there was a large difference in lap times above.
 
